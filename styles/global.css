@@ -11,12 +11,12 @@
 
   --logo: 400 2.5rem/100% var(--font-family-logo);
 
-  --title-md: 700 1.75rem/100% var(--font-family);
-  --title-sm: 700 1.125rem/100% var(--font-family);
+  --title-md: 700 1.75rem/100% var(--font-family-title);
+  --title-sm: 700 1.125rem/100% var(--font-family-title);
 
-  --text-md: 600 1rem/100% var(--font-family);
-  --text-sm: 600 0.875rem/100% var(--font-family);
-  --text-xs: 600 0.75rem/100% var(--font-family);
+  --text-md: 600 1rem/100% var(--font-family-text);
+  --text-sm: 600 0.875rem/100% var(--font-family-text);
+  --text-xs: 600 0.75rem/100% var(--font-family-text);
 
   --text-body: #c8cdd0;
   --text-heading: #f9f9f9;
@@ -31,4 +31,20 @@
   --shape-hover: #383d42;
 
   --danger: #ff5959;
+}
+
+body {
+  overflow: hidden;
+  font: var(--font-family-text);
+  color: var(--text-body);
+}
+
+h1,
+h2 {
+  color: var(--text-heading);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

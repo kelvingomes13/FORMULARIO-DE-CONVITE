@@ -1,0 +1,37 @@
+#app {
+  display: grid;
+  grid-template-columns: 48.75% 51.25%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+aside {
+  padding: 4rem;
+  background-color: var(--shape-background);
+  &.aside-container {
+    max-width: 31rem;
+    & > img {
+      margin-top: 2rem;
+    }
+  }
+  & h2 {
+    font: var(--logo);
+    color: #ff598b;
+  }
+  & p {
+    font: 300 2.5rem/100% var(--font-famil-text);
+    color: var(--text-heading);
+  }
+}
+
+main {
+  overflow: auto;
+  padding: 4rem;
+  background-color: var(--shape-body);
+  border: 1.25rem solid var(--shape-background);
+
+  &.main-container {
+    max-width: 33rem;
+    margin-right: auto;
+  }
+}
