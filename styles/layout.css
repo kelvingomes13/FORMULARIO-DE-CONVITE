@@ -1,37 +1,43 @@
 #app {
   display: grid;
-  grid-template-columns: 48.75% 51.25%;
+  grid-template-columns: 32.79% 67.21%;
   height: 100vh;
   overflow: hidden;
 }
 
 aside {
-  padding: 4rem;
-  background-color: var(--shape-background);
-  &.aside-container {
-    max-width: 31rem;
-    & > img {
-      margin-top: 2rem;
-    }
+  padding: 2rem;
+
+  background-image: url(../assets/Background.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  margin-top: 1.25rem;
+  margin-left: auto;
+
+  & svg {
+    width: 45px;
+    height: 48px;
+    margin-bottom: 1rem;
   }
   & h2 {
     font: var(--logo);
     color: #ff598b;
+    padding-bottom: 1rem;
   }
   & p {
     font: 300 2.5rem/100% var(--font-famil-text);
-    color: var(--text-heading);
+    color: var(--text-body);
   }
 }
 
 main {
   overflow: auto;
-  padding: 4rem;
+  padding: 5rem 8.125rem;
   background-color: var(--shape-body);
   border: 1.25rem solid var(--shape-background);
 
   &.main-container {
-    max-width: 33rem;
-    margin-right: auto;
+    max-width: 35rem;
   }
 }
