@@ -31,20 +31,20 @@
   --shape-hover: #383d42;
 
   --danger: #ff5959;
+
+  --border-brand-light: #59b2ff;
+  --border-brand-mid: #3487cf;
+  --border-brand-dark: #1d6fb6;
 }
 
 body {
   overflow: hidden;
   font: var(--font-family-text);
   color: var(--text-body);
+  background-color: var(--shape-background);
 }
 
 h1,
 h2 {
   color: var(--text-heading);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
