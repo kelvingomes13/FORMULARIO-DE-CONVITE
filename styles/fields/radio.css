@@ -1,0 +1,18 @@
+.radio-image {
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+  }
+}
+.radio-button {
+  display: flex;
+  align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+.flex-1 {
+    flex: 1;
+}

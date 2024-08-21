@@ -14,6 +14,7 @@ aside {
 
   margin-top: 1.25rem;
   margin-left: auto;
+  max-width: 35rem;
 
   & svg {
     width: 45px;
@@ -36,8 +37,5 @@ main {
   padding: 5rem 8.125rem;
   background-color: var(--shape-body);
   border: 1.25rem solid var(--shape-background);
-
-  &.main-container {
-    max-width: 35rem;
-  }
+  margin-right: auto;
 }
