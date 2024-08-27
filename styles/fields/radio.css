@@ -11,8 +11,39 @@
 }
 
 .flex {
-    display: flex;
+  display: flex;
+  gap: 1rem;
+}
+.flex-2 {
+  flex: 2;
 }
 .flex-1 {
-    flex: 1;
+  flex: 1;
+}
+.flex-3 {
+  flex: 3;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.active {
+  background-color: #1c1f21;
+  color: #f9f9f9;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#presencial:hover {
+  background-color: #444;
+}
+
+#online:hover {
+  background-color: #a79e9ec9;
 }
