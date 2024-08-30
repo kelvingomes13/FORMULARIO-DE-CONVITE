@@ -1,49 +1,84 @@
-.radio-image {
-  & input,
-  & input:focus,
-  & input:hover {
-    all: unset;
-  }
-}
-.radio-button {
-  display: flex;
-  align-items: center;
-}
-
 .flex {
   display: flex;
   gap: 1rem;
 }
-.flex-2 {
-  flex: 2;
-}
+
 .flex-1 {
   flex: 1;
 }
-.flex-3 {
-  flex: 3;
+
+label + .radio-wrapper {
+  margin-top: 1rem;
 }
 
-.button-container {
+.radio-wrapper {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  background-color: var(--input-base);
+
+  appearance: none;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid var(--input-placeholder);
+  padding: 0.75rem 1rem;
+
+  font: var(--font-family-text);
+  color: var(--text-heading);
 }
 
-.active {
-  background-color: #1c1f21;
-  color: #f9f9f9;
-  border: none;
-  padding: 15px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
+.radio-inner {
+  margin: 0;
+  padding: 0;
+  border: 1px solid var(--input-placeholder);
+  border-radius: 0.5rem;
+  width: 100%;
 
-#presencial:hover {
-  background-color: #444;
-}
+  position: relative;
+  & input,
+  & input:focus,
+  & input:hover {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  .radio-image1 {
+    background-image: url(../../assets/icons/building-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+  }
 
-#online:hover {
-  background-color: #a79e9ec9;
+  &:hover,
+  &:focus-within {
+    border: 1px solid var(--input-placeholder);
+  }
+  &:has(:checked) {
+    & .radio-image1 {
+      background-image: url(../../assets/icons/building-hover.svg);
+    }
+  }
+  .radio-image2 {
+    background-image: url(../../assets/icons/video.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+  }
+
+  &:hover,
+  &:focus-within {
+    background-color: var(--input-placeholder);
+    color: white;
+  }
+  &:has(:checked) {
+    border: 2px solid var(--border-brand-light);
+    & .radio-image2 {
+      background-image: url(../../assets/icons/video-hover.svg);
+      color: var(-text-heading);
+    }
+  }
 }

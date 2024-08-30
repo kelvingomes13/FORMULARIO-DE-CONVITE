@@ -44,17 +44,6 @@ input[type="datetime-local"] {
     color: var(--input-placeholder);
   }
 
-  &:invalid {
-    border: 0.125rem solid var(--semantic-error);
-  }
-
-  & + small {
-    font: var(--text-sm);
-    color: #78716c;
-    display: inline-block;
-    margin-top: 0.25rem;
-  }
-
   &[required] + .error {
     display: flex;
     align-items: center;

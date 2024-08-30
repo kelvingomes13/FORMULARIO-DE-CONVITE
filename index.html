@@ -98,63 +98,54 @@
                                 <label for="inicial-date">Inicio</label>
                                 <input type="datetime-local" name="inicial-date" id="datetime" lang="pt-br">
                             </div>
-
-
                             <div class="input-wrapper flex-1">
                                 <label for="final-date">Fim</label>
                                 <input type="datetime-local" name="final-date" id="final-date" lang="pt-br">
                             </div>
-
                         </div>
 
                         <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="">TIPO</label>
 
-                            <div class="tipo flex-1">
-                                <label for="type">Tipo</label>
+                                <div class="input-wrapper flex-1 radio-wrapper">
+                                    <div class="radio-inner">
+                                        <div class="radio-image1"></div>
+                                        <input type="radio" name="study-shift" value="presencial" id="presencial">
 
-                                <div class="button-container flex-1">
-                                    <button id="presencial" class="active">
-                                        <img src="./assets/icons/building-2.svg" alt="">
-                                        Presencia
-                                    </button>
-                                    <button id="online" class="active">
-                                        <img src="./assets/icons/video.svg" alt="">
-                                        online</button>
+                                        <label for="presencial">Presencial</label>
+                                    </div>
+                                    <div class="radio-inner">
+                                        <div class="radio-image2"></div>
+                                        <input type="radio" name="online" value="online" id="online">
 
+                                        <label for="online">ONline</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="flex-1">
+                                <div>
+                                    <label for="">Local</label>
+                                    <input type="address" name="endereco" id="endereco" placeholder="teste">
                                 </div>
 
                             </div>
 
-
-                            <div class="input-wrapper flex-1">
-                                <label for=" address">Local</label>
-                                <input type="address" name="address" id="address" placeholder="Link do endereço">
-                            </div>
+                        </div>
+                        <div class="textarea-wrapper">
+                            <label for="description">Descrição</label>
+                            <textarea name="description id=" description" cols="30" rows="5" type="text"
+                                placeholder="Escreva sobre os detalhes do evento"></textarea>
                         </div>
 
+                    </fieldset>
 
-
+                </form>
 
             </div>
 
-
-
-
-
-
-            <div class="textarea-wrapper">
-                <label for="description">Descrição</label>
-                <textarea name="description id=" description" cols="30" rows="5" type="text"
-                    placeholder="Escreva sobre os detalhes do evento"></textarea>
-            </div>
-
-            </fieldset>
-
-            </form>
-
-    </div>
-
-    </main>
+        </main>
 
 
     </div>
