@@ -81,13 +81,16 @@
         <main>
             <div class="main-container">
                 <div class="header">
-                    <img src="./assets/icons/calendar.svg" alt="calendario">
                     <h1>Crie seu convite</h1>
                 </div>
 
                 <form method="post" enctype="multipart/form-data">
                     <fieldset class="event-info">
-                        <legend>Sobre o evento</legend>
+                        <div class="subtitle">
+                            <img src="./assets/icons/calendar.svg" alt="calendario">
+                            <legend>Sobre o evento</legend>
+
+                        </div>
                         <div class="input-wrapper">
                             <label for="eventname">T´tulo</label>
                             <input type="eventname" name="eventname" type="text" placeholder="Nome do evento">
@@ -141,8 +144,18 @@
 
                     </fieldset>
 
-                </form>
+                    <fieldset class="template-card">
+                        <div class="subtitle">
+                            <img src="./assets/icons/paintbrush-vertical.svg" alt="pincel">
+                            <legend>Personalização</legend>
+                        </div>
 
+
+
+
+                    </fieldset>
+
+                </form>
             </div>
 
         </main>
