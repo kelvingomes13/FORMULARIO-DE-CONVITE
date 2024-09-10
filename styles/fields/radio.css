@@ -82,3 +82,83 @@ label + .radio-wrapper {
     }
   }
 }
+
+.circles {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.radio-inner-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 0.75rem;
+  border-radius: 50%;
+  background-color: var(--shape-button);
+  width: 2.5rem;
+  height: 2.5rem;
+  outline: 2px solid var(--shape-button);
+
+  input[type="radio"] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+    &:hover {
+      border: 0.375rem solid var(--shape-hover);
+      border-radius: 50px;
+    }
+    &:checked {
+      outline: 2px solid var(--border-brand-light);
+      border-radius: 50%;
+    }
+  }
+}
+
+.inner-color {
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+}
+
+.blue-color {
+  background-color: var(--border-brand-light);
+}
+.naxy-color {
+  background-color: var(--naxy);
+}
+.purple-color {
+  background-color: var(--purple);
+}
+
+.fuschia-color {
+  background-color: var(--fuschia);
+}
+
+.pink-color {
+  background-color: var(--pink);
+}
+.red-color {
+  background-color: var(--red);
+}
+.dange-color {
+  background-color: var(--danger);
+}
+.orange-color {
+  background-color: var(--orange);
+}
+.yellow-color {
+  background-color: var(--yellow);
+}
+.green-color {
+  background-color: var(--green);
+}
+
+.lime-color {
+  background-color: var(--lime);
+}
+.cyan-color {
+  background-color: var(--cyan);
+}

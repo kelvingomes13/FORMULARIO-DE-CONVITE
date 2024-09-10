@@ -31,10 +31,18 @@
   --shape-hover: #383d42;
 
   --danger: #ff5959;
-
   --border-brand-light: #59b2ff;
   --border-brand-mid: #3487cf;
   --border-brand-dark: #1d6fb6;
+  --purple: #b259ff;
+  --fuschia: #ff59f9;
+  --pink: #ff598b;
+  --orange: #ff8b59;
+  --lime: #e1ff59;
+  --green: #59ff91;
+  --cyan: #59fff9;
+  --naxy: #6a59ff;
+  --yellow: #ffcd59;
 }
 
 body {
