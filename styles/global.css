@@ -35,6 +35,17 @@
   --border-brand-light: #59b2ff;
   --border-brand-mid: #3487cf;
   --border-brand-dark: #1d6fb6;
+
+  --color-accent-navy: #6a59ff;
+  --color-accent-purple: #b259ff;
+  --color-accent-fuchsia: #ff59f9;
+  --color-accent-pink: #ff598b;
+  --color-feedback-danger: #ff5959;
+  --color-accent-orange: #ff8b59;
+  --color-accent-yellow: yellow;
+  --color-accent-lime: #e1ff59;
+  --color-accent-green: #59ff91;
+  --color-accent-cyan: #59fff9;
 }
 
 body {
