@@ -144,18 +144,13 @@
 
                     </fieldset>
 
-                    <fieldset class="template-card">
-
+                    <fieldset id="personalization" class="template-card">
                         <div class="subtitle">
-
                             <img src="./assets/icons/paintbrush-vertical.svg" alt="pincel">
                             <legend>Personalização</legend>
-
-
                         </div>
                         <div id="main-color">
                             <label for="color">Cor princpal</label>
-
                             <div class="radio-wrapper">
                                 <div class="radio-inner-color">
                                     <input type="radio" name="color" id="blue-color-radio" value="blue">
@@ -295,11 +290,19 @@
                                 </div>
 
                             </div>
+                        </div>
 
-
-
-
-
+                        <div id="others">
+                            <div id="style">
+                                <label for="switch">Estilo</label>
+                                <div class="switch-wrapper">
+                                    <label class="switch">
+                                        <input type="checkbox" name="switch" id="switch">
+                                        <span class="dark-or-light"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
                     </fieldset>
 
                 </form>
