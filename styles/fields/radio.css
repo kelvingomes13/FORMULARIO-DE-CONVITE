@@ -11,6 +11,25 @@ label + .radio-wrapper {
   margin-top: 1rem;
 }
 
+.radio-wrapper-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: .75rem;
+  & .radio-inner {
+    & img {
+      width: 100%;
+      padding: 4px;
+      padding-bottom: 0;
+    }
+    & label{      
+      text-align: center;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  }
+
+}
+
 .radio-wrapper {
   display: flex;
   align-items: center;
@@ -26,7 +45,6 @@ label + .radio-wrapper {
   font: var(--font-family-text);
   color: var(--text-heading);
 }
-
 .radio-inner {
   margin: 0;
   padding: 0;
@@ -42,6 +60,7 @@ label + .radio-wrapper {
     position: absolute;
     inset: 0;
   }
+
   .radio-image1 {
     background-image: url(../../assets/icons/building-2.svg);
     background-repeat: no-repeat;
@@ -157,3 +176,5 @@ label + .radio-wrapper {
     }
   }
 }
+
+

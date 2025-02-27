@@ -38,4 +38,5 @@ main {
   background-color: var(--shape-body);
   border: 1.25rem solid var(--shape-background);
   margin-right: auto;
+  
 }
