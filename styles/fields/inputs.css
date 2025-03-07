@@ -49,3 +49,9 @@ input[type="datetime-local"] {
 input[placeholder="Nome do evento"] {
   color: var (--input-stroker);
 }
+
+
+
+input[type="radio"]{
+  display: none;
+}

@@ -7,9 +7,9 @@
   flex: 1;
 }
 
-label + .radio-wrapper {
+/* label + .radio-wrapper {
   margin-top: 1rem;
-}
+} */
 
 .radio-wrapper-box {
   display: grid;
@@ -46,11 +46,14 @@ label + .radio-wrapper {
   color: var(--text-heading);
 }
 .radio-inner {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   border: 1px solid var(--input-placeholder);
   border-radius: 0.5rem;
   width: 100%;
+  cursor: pointer;  
 
   position: relative;
   & input,
@@ -61,6 +64,14 @@ label + .radio-wrapper {
     inset: 0;
   }
 
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    cursor: pointer;
+  }
+
+
   .radio-image1 {
     background-image: url(../../assets/icons/building-2.svg);
     background-repeat: no-repeat;
@@ -68,6 +79,9 @@ label + .radio-wrapper {
     width: 1.5rem;
     height: 1.5rem;
     position: absolute;
+    align-items: center;
+    justify-content: center;
+  
   }
 
   &:hover,
@@ -100,6 +114,11 @@ label + .radio-wrapper {
       color: var(-text-heading);
     }
   }
+}
+.tipo {
+  border: none;
+  padding: ;
+  gap: 0;
 }
 
 #main-color {
@@ -177,4 +196,66 @@ label + .radio-wrapper {
   }
 }
 
+.switch {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: .75rem;
+  & .dark-orlight {
+    position: relative;
+    width: 64px;
+    border-radius: 999px;
+    background: var(--input-stroker);
+    padding-left: .25rem;
+    border: 1px solid red;
+  }
+    & .switch::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--input-stroke);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+  }
+   & input:checked + .switch { /* Para alterar a cor de fundo do slider */
+    background-color: var(--brand-light);
+  }
+   & input:checked + .slider::before { /* Para alterar a cor do slider (bolinha) e informar o quanto ele "andara" para a direita*/
+    background: white;
+    margin-left: 1.9rem;
+  }
 
+}
+
+.box{
+
+
+  
+  box-sizing: border-box;
+  
+  width: 64px;
+  height: 32px;
+  
+  background: #1C1F21;
+  border: 1px solid #363B40;
+  border-radius: 999px;
+  
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  
+  
+  /* Ellipse 1 */
+  
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 4px;
+  top: calc(50% - 24px/2);
+
+  background: #363B40;
+}
