@@ -45,3 +45,7 @@ main {
   background-color: var(--input-stroke);
   margin: 5rem 0;
 }
+
+.pd-top {
+  padding: 1.5rem 0;
+}

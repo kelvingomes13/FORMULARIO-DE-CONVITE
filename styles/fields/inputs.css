@@ -55,3 +55,13 @@ input[placeholder="Nome do evento"] {
 input[type="radio"]{
   display: none;
 }
+
+#name {
+  outline: 0.125rem solid var(--danger);
+  border: 0.125rem solid var(--danger);
+  outline-offset: 0.1px;
+}#name:focus-within {
+  outline: 0.125rem solid var(--border-brand-light);
+  border: 0.125rem solid var(--border-brand-light);
+  outline-offset: 0.1px;
+}

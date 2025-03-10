@@ -19,9 +19,11 @@
     height: 2.5rem;
     gap: .5rem;
    
-    & .color-svg path {
-      fill: var(--input-placeholder);
-      }
+    &:hover,
+     &:focus {
+       background-color: var(--input-placeholder);
+     }
+   
     }
 
     & label input {
