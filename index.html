@@ -2,14 +2,10 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
 
     <meta charset="UTF-8">
@@ -18,17 +14,7 @@
 
     <link rel="stylesheet" href="styles/index.css">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Leckerli+One&display=swap"
-        rel="stylesheet">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Baloo+2:wght@400..800&family=Leckerli+One&display=swap"
-        rel="stylesheet">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
+    
 </head>
 
 <body>
@@ -93,7 +79,7 @@
 
                         </div>
                         <div class="input-wrapper">
-                            <label for="eventname">T´tulo</label>
+                            <label for="eventname">Titulo</label>
                             <input type="eventname" name="eventname" type="text" placeholder="Nome do evento">
                         </div>
 
@@ -318,6 +304,68 @@
                                 </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div id="contact">
+                            <div class="subtitle">
+                                <img src="./assets/icons/contact.svg" alt="contact icon">
+                                <legend>Dados para Contato</legend>
+                            </div>
+
+                            <div class="input-wrapper">
+                              <label for="name">Nome</label>
+                              <input type="text" name="name" id="name" placeholder="Nome Completo">
+                              <div class="erro-menseger">
+                                <img src="./assets/icons/error.svg" alt="">
+                                <span>Campo Obrigatório</span>
+                              </div>
+                           </div>
+
+                           <div class="flex">
+                            <div class="input-wrapper flex-1">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="exemple@exemple.com">
+                            </div>
+
+                            <div class="input-wrapper flex-1">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" name="phone" id="phone" placeholder="(92) 99999-9999">
+                            </div>
+                        </div>
+                        </div>
+                    </fieldset>
+
+                    <div id="line"></div>
+
+                    <fieldset class="footer">
+                        <div class="checkbox-wrapper">
+                            <label class="custom-checkbox">
+                            <input type="checkbox" id="terms" name="terms">
+                            <span class="checkmark"></span>
+                            Li e concordo com os 
+                            <strong>Termos e Condições</strong>
+                             e com a 
+                             <strong>Política de Privacidade</strong>.
+                            </label>
+
+                            <label class="custom-checkbox">
+                            <input type="checkbox" id="send-email" name="send-email">
+                            <span class="checkmark"></span>
+                            Aceito receber atualizações e promoções por e-mail.
+                            </label>
+
+                            <label class="custom-checkbox">
+                            <input type="checkbox" id="send-sms" name="send-sms">
+                            <span class="checkmark"></span>
+                            Aceito receber atualizações e promoções por SMS.
+                            </label>
+                        </div>
+
+                        <div class="action-wrapper">
+                            <button class="generate-invitation" type="button">
+                                <img src="assets/icons/ticket.svg" alt="">
+                                Gerar Convite
+                            </button>
                         </div>
                     </fieldset>
 

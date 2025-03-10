@@ -40,3 +40,8 @@ main {
   margin-right: auto;  
 }
 
+#line {
+    height: 1.75px;
+  background-color: var(--input-stroke);
+  margin: 5rem 0;
+}
